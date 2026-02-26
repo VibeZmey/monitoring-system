@@ -1,0 +1,6 @@
+@MonitoringSystem.Presentation_HostAddress = http://localhost:5195
+
+GET {{MonitoringSystem.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
