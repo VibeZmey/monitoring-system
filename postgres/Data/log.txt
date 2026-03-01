@@ -1,0 +1,10 @@
+2026-03-01 20:11:22.882 MSK [16148] LOG:  listening on IPv6 address "::1", port 5433
+2026-03-01 20:11:22.882 MSK [16148] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-03-01 20:11:22.938 MSK [17232] LOG:  database system was shut down at 2026-03-01 20:11:19 MSK
+2026-03-01 20:11:22.981 MSK [16148] LOG:  database system is ready to accept connections
+2026-03-01 20:12:36.721 MSK [19528] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 20:12:36.767 MSK [5088] FATAL:  database "monitoring" does not exist
+2026-03-01 20:12:36.891 MSK [8640] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 20:12:36.932 MSK [22440] FATAL:  database "monitoring" does not exist
+2026-03-01 20:12:36.983 MSK [20700] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 20:12:37.724 MSK [8348] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
