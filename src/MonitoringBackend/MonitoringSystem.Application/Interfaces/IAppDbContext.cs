@@ -3,7 +3,7 @@ using MonitoringSystem.Domain.Models;
 
 namespace MonitoringSystem.Application.Interfaces;
 
-public interface IAppDbContex
+public interface IAppDbContext
 {
     DbSet<Metric> Metrics { get; set; }
     DbSet<MetricSetting> MetricSettings { get; set; }

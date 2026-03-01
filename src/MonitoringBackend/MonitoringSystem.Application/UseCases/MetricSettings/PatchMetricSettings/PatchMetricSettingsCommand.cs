@@ -1,6 +1,8 @@
-﻿namespace MonitoringSystem.Application.UseCases.MetricSettings.PatchMetricSettings;
+﻿using MediatR;
 
-public class PatchMetricSettingsCommand
+namespace MonitoringSystem.Application.UseCases.MetricSettings.PatchMetricSettings;
+
+public class PatchMetricSettingsCommand : IRequest<Unit>
 {
     
 }

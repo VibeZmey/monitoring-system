@@ -1,6 +1,14 @@
-﻿namespace MonitoringSystem.Infrastructure;
+﻿using Microsoft.Extensions.DependencyInjection;
+using MonitoringSystem.Infrastructure.Services;
 
-public class DependencyInjection
+namespace MonitoringSystem.Infrastructure;
+
+public static class DependencyInjection
 {
-    
+    public static IServiceCollection AddInfrastructure(this IServiceCollection services)
+    {
+        services.AddSingleton<CollectMetricsService>();
+        services.AddHostedService<CollectMetricsHostService>();
+        return services;
+    }
 }

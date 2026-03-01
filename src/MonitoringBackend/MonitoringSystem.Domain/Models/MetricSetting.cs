@@ -1,6 +1,6 @@
 ﻿namespace MonitoringSystem.Domain.Models;
 
-enum MetricName
+public enum MetricName
 {
     CpuUsagePct,
     CpuTempC,

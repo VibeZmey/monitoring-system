@@ -3,12 +3,21 @@
     <PropertyGroup>
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\MonitoringSystem.Application\MonitoringSystem.Application.csproj" />
       <ProjectReference Include="..\MonitoringSystem.Domain\MonitoringSystem.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="LibreHardwareMonitorLib" Version="0.9.7-pre645" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.3" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.3" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.0" />
+      <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="10.0.3" />
     </ItemGroup>
 
 </Project>
