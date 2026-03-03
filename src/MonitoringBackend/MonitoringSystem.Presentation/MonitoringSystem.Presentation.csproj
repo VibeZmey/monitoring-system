@@ -4,9 +4,26 @@
         <TargetFramework>net10.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
     </PropertyGroup>
 
+    <Target Name="CopyLibreHardwareMonitorNativeFiles" AfterTargets="Build">
+        <ItemGroup>
+            <!-- Путь к пакету в глобальном кэше NuGet -->
+            <LhmNativeFiles Include="$(NuGetPackageRoot)librehardwaremonitorlib\**\WinRing0x64.*" />
+            <LhmNativeFiles Include="$(NuGetPackageRoot)librehardwaremonitorlib\**\WinRing0x86.*" />
+        </ItemGroup>
+
+        <!-- Копируем файлы в папку вывода -->
+        <Copy
+                SourceFiles="@(LhmNativeFiles)"
+                DestinationFolder="$(OutDir)"
+                SkipUnchangedFiles="true"
+                ContinueOnError="WarnAndContinue" />
+    </Target>
+    
     <ItemGroup>
+        <PackageReference Include="LibreHardwareMonitorLib" Version="0.9.7-pre645" />
         <PackageReference Include="MediatR" Version="10.0.1" />
         <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3"/>

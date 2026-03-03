@@ -5,7 +5,9 @@ using MonitoringSystem.Domain.Models;
 
 namespace MonitoringSystem.Application.UseCases.Metrics.AddCollectedMetrics;
 
-public class AddCollectedMetricsHandler(IAppDbContext context, ILogger<AddCollectedMetricsHandler> logger)
+public class AddCollectedMetricsHandler(
+    IAppDbContext context, 
+    ILogger<AddCollectedMetricsHandler> logger)
     : IRequestHandler<AddCollectedMetricsCommand, Unit>
 {
     public async Task<Unit> Handle(AddCollectedMetricsCommand request, CancellationToken cancellationToken)

@@ -2,37 +2,79 @@
 
 public class MetricRollup1M
 {
-    public long Id {get;init;}
-    public DateTimeOffset BucketTs {get;init;}
+    public long Id {get;set;}
+    public DateTimeOffset BucketTs {get;set;}
     
-    public double? CpuUsageMin {get;init;}
-    public double? CpuUsageMax {get;init;}
-    public double? CpuUsageAvg {get;init;}
-    public double? CpuTempMin {get;init;}
-    public double? CpuTempMax {get;init;}
-    public double? CpuTempAvg {get;init;}
+    public double? CpuUsageMin {get;set;}
+    public double? CpuUsageMax {get;set;}
+    public double? CpuUsageAvg {get;set;}
     
-    public double? GpuUsageMin {get;init;}
-    public double? GpuUsageMax {get;init;}
-    public double? GpuUsageAvg {get;init;}
-    public double? GpuTempMin {get;init;}
-    public double? GpuTempMax {get;init;}
-    public double? GpuTempAvg {get;init;}
+    public double? CpuTempMin {get;set;}
+    public double? CpuTempMax {get;set;}
+    public double? CpuTempAvg {get;set;}
     
-    public double? RamUsageMin {get;init;}
-    public double? RamUsageMax {get;init;}
-    public double? RamUsageAvg {get;init;}
-    public int? RamUsedMbMin {get;init;}
-    public int? RamUsedMbMax {get;init;}
-    public int? RamUsedMbAvg {get;init;}
+    public double? GpuUsageMin {get;set;}
+    public double? GpuUsageMax {get;set;}
+    public double? GpuUsageAvg {get;set;}
     
-    public double? DiskUsageMin {get;init;}
-    public double? DiskUsageMax {get;init;}
-    public double? DiskUsageAvg {get;init;}
-    public int? DiskUsedMbMin {get;init;}
-    public int? DiskUsedMbMax {get;init;}
-    public int? DiskUsedMbAvg {get;init;}
+    public double? GpuTempMin {get;set;}
+    public double? GpuTempMax {get;set;}
+    public double? GpuTempAvg {get;set;}
     
-    public long? NetSentBytesPerSecAvg {get;init;}
-    public long? NetRecvBytesPerSecAvg {get;init;}
+    public double? RamUsageMin {get;set;}
+    public double? RamUsageMax {get;set;}
+    public double? RamUsageAvg {get;set;}
+    
+    public int? RamUsedMbMin {get;set;}
+    public int? RamUsedMbMax {get;set;}
+    public int? RamUsedMbAvg {get;set;}
+    
+    public double? DiskUsageMin {get;set;}
+    public double? DiskUsageMax {get;set;}
+    public double? DiskUsageAvg {get;set;}
+    
+    public int? DiskUsedMbMin {get;set;}
+    public int? DiskUsedMbMax {get;set;}
+    public int? DiskUsedMbAvg {get;set;}
+    
+    public long? NetSentBytesPerSecAvg {get;set;}
+    public long? NetRecvBytesPerSecAvg {get;set;}
+    
+    public MetricRollup1M()
+    {
+        CpuUsageMin = 101;
+        CpuUsageMax = -1;
+        CpuUsageAvg = 0;
+
+        CpuTempMin = 150;
+        CpuTempMax = -1;
+        CpuTempAvg = 0;
+
+        GpuUsageMin = 101;
+        GpuUsageMax = -1;
+        GpuUsageAvg = 0;
+
+        GpuTempMin = 150;
+        GpuTempMax = -1;
+        GpuTempAvg = 0;
+
+        RamUsageMin = 101;
+        RamUsageMax = -1;
+        RamUsageAvg = 0;
+
+        RamUsedMbMin = int.MaxValue;
+        RamUsedMbMax = -1;
+        RamUsedMbAvg = 0;
+
+        DiskUsageMin = 101;
+        DiskUsageMax = -1;
+        DiskUsageAvg = 0;
+
+        DiskUsedMbMin = int.MaxValue;
+        DiskUsedMbMax = -1;
+        DiskUsedMbAvg = 0;
+        
+        NetSentBytesPerSecAvg = 0;
+        NetRecvBytesPerSecAvg = 0;
+    }
 }
