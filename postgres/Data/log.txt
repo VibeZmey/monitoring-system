@@ -1,0 +1,33 @@
+2026-03-01 20:11:22.882 MSK [16148] LOG:  listening on IPv6 address "::1", port 5433
+2026-03-01 20:11:22.882 MSK [16148] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-03-01 20:11:22.938 MSK [17232] LOG:  database system was shut down at 2026-03-01 20:11:19 MSK
+2026-03-01 20:11:22.981 MSK [16148] LOG:  database system is ready to accept connections
+2026-03-01 20:12:36.721 MSK [19528] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 20:12:36.767 MSK [5088] FATAL:  database "monitoring" does not exist
+2026-03-01 20:12:36.891 MSK [8640] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 20:12:36.932 MSK [22440] FATAL:  database "monitoring" does not exist
+2026-03-01 20:12:36.983 MSK [20700] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 20:12:37.724 MSK [8348] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 21:13:12.820 MSK [11536] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 21:14:14.539 MSK [15116] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 22:19:56.699 MSK [6420] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 22:20:07.688 MSK [12428] ERROR:  duplicate key value violates unique constraint "PK_MetricSettings"
+2026-03-01 22:20:07.688 MSK [12428] DETAIL:  Key ("MetricName")=(NetBytesRecvTotal) already exists.
+2026-03-01 22:20:07.688 MSK [12428] STATEMENT:  INSERT INTO "MetricSettings" ("MetricName", "CreatedAt", "DisplayOrder", "IsEnabled", "UpdatedAt")
+	VALUES ($1, $2, $3, $4, $5)
+2026-03-01 22:21:59.963 MSK [8168] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 22:22:06.554 MSK [22696] ERROR:  duplicate key value violates unique constraint "PK_MetricSettings"
+2026-03-01 22:22:06.554 MSK [22696] DETAIL:  Key ("MetricName")=(GpuTempC) already exists.
+2026-03-01 22:22:06.554 MSK [22696] STATEMENT:  INSERT INTO "MetricSettings" ("MetricName", "CreatedAt", "DisplayOrder", "IsEnabled", "UpdatedAt")
+	VALUES ($1, $2, $3, $4, $5)
+2026-03-01 22:52:27.534 MSK [8024] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 22:52:59.136 MSK [16492] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 23:01:51.294 MSK [22552] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 23:04:16.741 MSK [22336] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 23:04:56.456 MSK [24068] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 23:07:20.856 MSK [18604] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 23:08:18.250 MSK [19220] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 23:11:34.629 MSK [23588] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 23:14:14.872 MSK [948] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 23:17:21.977 MSK [10584] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0
+2026-03-01 23:27:16.128 MSK [25000] FATAL:  unsupported frontend protocol 1234.5680: server supports 2.0 to 3.0

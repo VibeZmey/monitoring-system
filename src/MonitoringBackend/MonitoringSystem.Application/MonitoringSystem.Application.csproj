@@ -10,4 +10,12 @@
       <ProjectReference Include="..\MonitoringSystem.Domain\MonitoringSystem.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="10.4.0" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.4.0" />
+      <PackageReference Include="MediatR" Version="10.0.1" />
+      <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.3" />
+    </ItemGroup>
+
 </Project>
